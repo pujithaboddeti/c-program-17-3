@@ -1,0 +1,17 @@
+ //finding n cube using functiom
+ #include <stdio.h>
+ int cubenum(int x);
+ int main()
+ {
+ 	int cube,n;
+ 	scanf("%d",&n);
+ 	cube=cubenum(n);
+ 	printf("cube is %d ",cube);
+ 	return 0;
+ }
+int cubenum(int x)
+{
+   int i;
+   i=x*x*x;
+   return i;
+}
