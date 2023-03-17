@@ -1,0 +1,17 @@
+// Write a c program to find n area of rectangle using
+// sub function.
+#include<stdio.h>
+int rectarea(int x,int y);
+main()
+{
+    int area,l,b;
+    scanf("%d %d",&l,&b);
+    area=rectarea(l,b);
+    printf("rectangle area is %d",area);
+}
+int rectarea(int x,int y)
+{
+    int i;
+    i=x*y;
+    return i;
+}
