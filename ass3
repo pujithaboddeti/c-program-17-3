@@ -1,0 +1,21 @@
+//Write a c program to find n factorial using sub function
+#include<stdio.h>
+int factnum(int x);
+main()
+{
+    int fact,n;
+    scanf("%d",&n);
+    fact=factnum(n);
+    printf("%d",fact);
+}
+int factnum(int x)
+{
+    int i=1;
+    while(x>=1)
+    {
+        i=i*x;
+        x--;
+    }
+    return i;
+}
+
